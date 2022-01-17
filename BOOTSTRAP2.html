@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Course</title>
+
+<body>
+    <!--Image Properties in Bootstrap-->
+    <!--Images not working properly in my system-->
+    <h1>Images in bootstrap</h1>
+    <div class="container">
+        <h3>1.Image Responsive</h3>
+        <div class="row">
+            <div class="col-md-4">
+                <img class="img-responsive" src="OIP.jpg" alt="puppy image" />
+                <h3>2.Image Rounded</h3>
+                <img class="img-responsive img-rounded" src="OIP.jpg" alt="puppy image" />
+                <h3>3.Image circle</h3>
+                <img class="img-responsive img-circle" src="OIP.jpg" alt="puppy image" />
+            </div>
+        </div>
+    </div>
+
+    <!--Buttons in Bootstrap-->
+    <h1>Buttons in Bootstrap</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h3>*Default Buttons</h3>
+                <button type="button" class="btn btn-default">Click Me!</button>
+                <h3>1.Primary button</h3>
+                <button type="button" class="btn btn-primary">Click Me!</button>
+                <h3>2.Info Button</h3>
+                <button type="button" class="btn btn-info">Click Me!</button>
+                <h3>3.Warning button</h3>
+                <button type="button" class="btn btn-warning">Get ready</button>
+                <h3>4.Danger Button</h3>
+                <button type="button" class="btn btn-danger">stop</button>
+                <h3>5.Success Button</h3>
+                <button type="button" class="btn btn-success">Green</button>
+            </div>
+            <div class="col-md-6">
+                <h3>Size of the button</h3>
+                <button type="button" class="btn btn-success btn-xs">
+                    Welcome to BootStrap
+                </button>
+                <button type="button" class="btn btn-success btn-sm">MELVIN</button>
+                <button type="button" class="btn btn-success btn-lg">
+                    HOW ARE YOU
+                </button>
+                <button type="button" class="btn btn-success">I'm Fine</button>
+                <button type="button" class="btn btn-success btn-block">
+                    Normal
+                </button>
+            </div>
+            <hr />
+            <div class="col-md-6">
+                <button type="button" class="btn btn-warning active">Active</button>
+                <button type="button" class="btn btn-warning disabled">
+                    Disable
+                </button>
+            </div>
+
+            <div class="col-md-6">
+                <a href="#" class="btn btn-success">Hello</a>
+                <button type="button" class="btn btn-warning">Button</button>
+                <input type="submit" class="btn btn-danger" value="submt" />
+            </div>
+        </div>
+
+        <!--ButtonsGroup in Bootstrap-->
+        <h1>Bootstrap Button Groups</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>1.Button Group</h3>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-primary">Home</button>
+                        <button type="button" class="btn btn-info">Contact</button>
+                        <button type="button" class="btn btn-warning">Product</button>
+                        <button type="button" class="btn btn-danger">Download</button>
+                    </div>
+                    <hr />
+                    <h3>2.Button Group large</h3>
+                    <div class="btn-group btn-group-lg">
+                        <button type="button" class="btn btn-primary">Home</button>
+                        <button type="button" class="btn btn-info">Contact</button>
+                        <button type="button" class="btn btn-warning">Product</button>
+                        <button type="button" class="btn btn-danger">Download</button>
+                    </div>
+                    <hr />
+                    <h3>3.Button Group Small</h3>
+                    <div class="btn-group btn-group-sm">
+                        <button type="button" class="btn btn-primary">Home</button>
+                        <button type="button" class="btn btn-info">Contact</button>
+                        <button type="button" class="btn btn-warning">Product</button>
+                        <button type="button" class="btn btn-danger">Download</button>
+                    </div>
+                    <hr />
+                    <h3>4.Buttons in Vertical</h3>
+                    <div class="btn-group-vertical">
+                        <button type="button" class="btn btn-primary">Home</button>
+                        <button type="button" class="btn btn-info">Contact</button>
+                        <button type="button" class="btn btn-warning">Product</button>
+                        <button type="button" class="btn btn-danger">Download</button>
+                    </div>
+                    <hr />
+                    <h3>5.Anchor Tags in Button</h3>
+                    <div class="btn-group">
+                        <a href="#" class="btn btn-primary">Home</a>
+                        <a href="#" class="btn btn-info">Contact</a>
+                        <a href="#" class="btn btn-warning">Product</a>
+                        <a href="#" class="btn btn-danger">Download</a>
+                    </div>
+                    <hr />
+                    <h3>6.Justify in Button</h3>
+                    <div class="btn-group btn-group btn-justified">
+                        <a href="#" class="btn btn-primary">Home</a>
+                        <a href="#" class="btn btn-info">Contact</a>
+                        <a href="#" class="btn btn-warning">Product</a>
+                        <a href="#" class="btn btn-danger">Download</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--ButtonGroup with dropdown in Bootstrap-->
+    <h1>Bootstrap Button Group with Dropdown</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="btn-group">
+                    <button class="btn btn-primary">Courses</button>
+                    <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Work</a></li>
+                    </ul>
+                </div>
+                <hr>
+                <div class="btn-group">
+                    <button class="btn btn-primary">Home</button>
+                    <button class="btn btn-primary">Downloads</button>
+                    <div class="btn-group">
+                        <button class="btn btn-primary">Courses</button>
+                        <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Work</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Bootstrap Badges and labels-->
+    <h1>Bootstrap Badges and Labels</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <a href="#">Inbox<span class="badge">15</span></a><br>
+                <a href="#">Outbox<span class="badge">2</span></a><br>
+                <a href="#">Spam<span class="badge">5</span></a><br>
+                <a href="#">Social<span class="badge">8</span></a><br>
+                <hr>
+                <button class="btn btn-danger">Inbox<span class="badge">10</span></button>
+                <hr>
+            </div>
+        </div>
+    </div>
+    <!--Progress bar in Bootstrap-->
+    <h1>Progress bar in Bootstrap</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="progress">
+                    <div class="progress-bar" style="width: 50%;">50%</div>
+                </div>
+                <hr>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-danger" style="width: 96%;">96%</div>
+                </div>
+                <hr>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-info" style="width: 10%;">10%</div>
+                </div>
+                <hr>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-danger" style="width: 35%;">35%</div>
+                </div>
+                <hr>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-primary progress-bar-striped active" style="width: 80%;">80%
+                    </div>
+                </div>
+                <hr>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-danger progress-bar-striped" style="width: 62%;">62%</div>
+                </div>
+                <hr>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-success" style="width:40%;">40%</div>
+                    <div class="progress-bar progress-bar-warning" style="width:30%;">30%</div>
+                    <div class="progress-bar progress-bar-danger" style="width:20%;">20%</div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--Pagination in Bootstrap-->
+    <h1>Pagination in Bootstrap</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-15">
+                <ul class="pagination">
+                    <li> <a href="#"> 1 </a> </li>
+                    <li> <a href="#"> 2 </a> </li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                </ul>
+                <hr>
+                <ul class="pagination">
+                    <li> <a href="#"> 1 </a> </li>
+                    <li> <a href="#"> 2 </a> </li>
+                    <li class="active"><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                </ul>
+                <hr>
+                <ul class="pagination pagination-lg">
+                    <li> <a href="#"> 1 </a> </li>
+                    <li> <a href="#"> 2 </a> </li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <!--Breadcrumbs in Bootstrap-->
+    <h1>Breadcrumbs in Bootstrap</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <ul class="breadcrumb">
+                    <li><a href="#">menu-1</a></li>
+                    <li><a href="#">menu-2</a></li>
+                    <li><a href="#">menu-3</a></li>
+                    <li class="active">menu-4</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!--Pagers in Bootstrap-->
+    <h1>Pagers in BootStrap</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <ul class="pager">
+                    <li><a href="#">previous</a></li>
+                    <li><a href="#">Next</a></li>
+                </ul>
+                <hr>
+                <ul class="pager">
+                    <li class="previous"><a href="#">previous</a></li>
+                    <li class="next"><a href="#">Next</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!--List Group in bootstrap-->
+    <h1>List Group In bootstrap</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <ul class="list-group">
+                    <li class="list-group-item">Item-1</li>
+                    <li class="list-group-item">Item-2</li>
+                    <li class="list-group-item">Item-3</li>
+                </ul>
+                <hr>
+                <ul class="list-group">
+                    <li class="list-group-item">Inbox <span class="badge">10</span></li>
+                    <li class="list-group-item">Sent <span class="badge">16</span></li>
+                    <li class="list-group-item">Outbox <span class="badge">27</span></li>
+                </ul>
+                <hr>
+                <div class="list-group">
+                    <a href="#" class="list-group-item">Item-1</a>
+                    <a href="#" class="list-group-item active">Item-2</a>
+                    <a href="#" class="list-group-item">Item-3</a>
+                    <a href="#" class="list-group-item disabled">Item-4</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Panels In Bootstrap-->
+    <h1>Panels in Bootstrap</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="panel panel-danger">
+                    <div class="panel-heading">Heading</div>
+                    <div class="panel-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio harum
+                        voluptate voluptas, illum voluptatem nulla quia dignissimos error maiores culpa</div>
+                    <div class="panel-footer">Footer</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--DropDown in Bootstrap-->
+    <h1>DropDown In Bootstrap</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="dropdown">
+                    <button class="btn btn-danger dropdown-toggle" data-toggle="dropdown">COURSES
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-header">
+                            Programming Courses
+                        </li>
+                        <li class="active"><a href="#">JAVA</a></li>
+
+                        <li><a href="#">JAVA CORE</a></li>
+
+                        <li><a href="#">JAVASCRIPT</a></li>
+                        <li class="divider"></li>
+                        <li class="dropdown-header">Web Designing courses</li>
+                        <li><a href="#">HTML</a></li>
+                        <li><a href="#">CSS</a></li>
+                        <li class="disabled"><a href="#">BOOTSTRAP</a></li>
+                    </ul>
+
+                </div>
+                <hr>
+                <h3>DropDown Menu Positions Right</h3>
+                <div class="dropdown">
+                    <button class="btn btn-danger dropdown-toggle" data-toggle="dropdown">COURSES
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-right">
+                        <li class="dropdown-header">
+                            Programming Courses
+                        </li>
+                        <li class="active"><a href="#">JAVA</a></li>
+
+                        <li><a href="#">JAVA CORE</a></li>
+
+                        <li><a href="#">JAVASCRIPT</a></li>
+                        <li class="divider"></li>
+                        <li class="dropdown-header">Web Designing courses</li>
+                        <li><a href="#">HTML</a></li>
+                        <li><a href="#">CSS</a></li>
+                        <li class="disabled"><a href="#">BOOTSTRAP</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Collapse in Bootstrap-->
+    <h1>Collapse in Bootstrap</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <button class="btn btn-success" data-toggle="collapse" data-target="#box">Click Me!</button>
+                <div id="box" class="collapse" style="background-color:teal;color:white; margin-top: 2px;">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam assumenda beatae, nulla quos
+                        repellat libero totam laudantium repellendus dolorum. Rerum, excepturi ab. Id quis illum
+                        voluptatum dolore minima quas libero excepturi maiores iure temporibus aliquam qui ratione ea
+                        perferendis nam porro sapiente necessitatibus possimus ipsa, debitis non deserunt sit. Ullam rem
+                        quas accusamus sed eaque blanditiis, cum officiis porro mollitia quidem molestiae distinctio
+                        quasi impedit voluptas iste possimus voluptatem ratione sapiente? Officiis sequi sunt enim est
+                        nobis deleniti aspernatur magnam, ratione modi itaque numquam quis neque laboriosam corporis aut
+                        dolor reprehenderit corrupti placeat tenetur. Omnis nobis eligendi consequuntur dolorem maxime.
+                    </p>
+                </div>
+                <hr>
+                <div class="panel panel-danger">
+                    <div class="panel-heading">
+                        <a href="#box2" data-toggle="collapse">Heading</a>
+                    </div>
+                    <div id="box2" class="panel-coapse colapse">
+                        <div class="panel-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio harum
+                            voluptate voluptas, illum voluptatem nulla quia dignissimos error maiores culpa</div>
+                        <div class="panel-footer">Footer</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Tabs In Bootstrap-->
+    <h1>Tabs in Bootstrap</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <hr>
+                <ul class="nav nav-tabs">
+                    <li><a href="#">menu-1</a></li>
+                    <li><a href="#">menu-2</a></li>
+                    <li class="active
+            "><a href="#">menu-3</a></li>
+                    <li><a href="#">menu-4</a></li>
+                    <li><a href="#">menu-5</a></li>
+                </ul>
+                <hr>
+                <ul class="nav nav-tabs">
+                    <li><a href="#">menu-1</a></li>
+                    <li><a href="#">menu-2</a></li>
+                    <li class="active"><a href="#">menu-3</a></li>
+                    <li><a href="#">menu-4</a></li>
+                    <hr>
+                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" href="#">menu-5<span
+                                class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Menu</a></li>
+                            <li><a href="#">Menu</a></li>
+                            <li><a href="#">Menu</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--Pills in Bootstrap-->
+    <h1>Pills in Bootstrap</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <ul class="nav nav-pills">
+                    <li><a href="#">menu-1</a></li>
+                    <li><a href="#">menu-2</a></li>
+                    <li><a href="#">menu-3</a></li>
+                    <li><a href="#">menu-4</a></li>
+                    <li class="disabled"><a href="#">menu-5</a></li>
+                </ul>
+                <hr>
+                <h3>Pills In Vertical</h3>
+                <ul class="nav nav-pills nav-stacked">
+                    <li><a href="#">menu-1</a></li>
+                    <li><a href="#">menu-2</a></li>
+                    <li><a href="#">menu-3</a></li>
+                    <li><a href="#">menu-4</a></li>
+                    <li class="disabled"><a href="#">menu-5</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--Dynamic Tabs and Pills In Bootstrap-->
+    <h1>Dynamic Tabs and Pills In Bootstrap</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <ul class="nav nav-pills">
+                    <li><a data-toggle="pill" href="#menu1">menu-1</a></li>
+                    <li class="active"><a data-toggle="pill" href="#menu2">menu-2</a></li>
+                    <li><a data-toggle="pill" href="#menu3">menu-3</a></li>
+                    <li><a  data-toggle="pill" href="#menu4">menu-4</a></li>
+                </ul>
+                <div class="tab-content">
+                    <div id="menu1" class="tab-pane fade">
+                        <h3>Menu-1</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                    <div class="tab-content">
+                        <div id="menu2" class="tab-pane fade in active">
+                            <h3>Menu-2</h3>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                        <div class="tab-content">
+                            <div id="menu3" class="tab-pane fade">
+                                <h3>Menu-3</h3>
+                                <p>Lorem ipsum dolor sit amet.</p>
+                            </div>
+                            <div class="tab-content">
+                                <div id="menu4" class="tab-pane fade">
+                                    <h3>Menu-4</h3>
+                                    <p>Lorem ipsum dolor sit amet.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   <!--Navbar in Bootstrap-->
+<h1>Navbar in Bootstrap</h1>
+   <nav class="navbar navbar-inverse">
+       <div class="container-fluid">
+           <div class="navbar-header">
+               <a href="#" class="navbar-brand">Melvin Thomas</a>
+           </div>
+           <ul class="nav navbar-nav"><li><a href="#">Link-1</a></li>
+           <li><a href="#">Link-2</a></li>
+           <li class="active"><a href="#">Link-3</a></li>
+           <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Link-4<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+            <li><a href="#">link-4.1</a></li>
+            <li><a href="#">link-4.2</a></li>
+            <li><a href="#">link-4.3</a></li>
+        </ul></li></ul>
+        <button class="btn btn-warning navbar-btn">Click Me!</button>
+        <form class="navbar-form navbar-left">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Search text">
+            </div>
+            <button type="submit" class="btn btn-success">Search Now</button>
+        </form>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"><i class="glyphicon glyphicon-log-in"></i>  Login in</a></li>
+            <li><a href="#"><i class="glyphicon glyphicon-user"></i> About</a></li>
+        </ul>
+    </div>
+   </nav>
+
+<!--Navbar Examples-->
+<h1>Navbar Example</h1>
+
+<nav class="navbar navbar-inverse ">
+<div class="container-fluid">
+    <div class="navbar-header">
+        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+        </button>
+        <a href="#" class="navbar-brand">Melvin Thomas</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+    <ul class="nav navbar-nav">
+        <li><a href="#">menu-1</a></li>
+        <li><a href="#">menu-2</a></li>
+        <li><a href="#">menu-3</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Sign In</a></li>
+        <li><a href="#">About</a></li>
+    </ul></div>
+</div></nav>
+<div class="container" style="margin-top: 50px;">
+    <div class="row">
+        <div class="col-md-12">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam, modi odio necessitatibus provident animi officia sint molestiae repudiandae dicta alias vero neque eveniet ex qui molestias quisquam accusamus magnam quaerat. Reprehenderit deserunt tempore, asperiores, illo culpa molestiae eum corrupti nisi nostrum officia at aut est quisquam! Doloremque possimus similique eos perferendis, explicabo, fugiat soluta, cumque illum nihil ea dicta enim aliquid libero saepe incidunt sequi. Id, reiciendis blanditiis voluptatem quia suscipit dolor accusantium eveniet fugiat culpa porro voluptate repellendus placeat. Provident quidem delectus nemo vitae. Consectetur, rem nesciunt. Sequi explicabo cupiditate nobis repellendus, et facilis ipsum, suscipit autem nemo, sapiente quos incidunt voluptas voluptatem voluptatibus saepe totam. Veniam aspernatur minus, error quisquam deleniti unde voluptatem quibusdam, aliquam expedita perspiciatis at veritatis, ipsam repellendus perferendis vel eaque. Velit numquam eos doloremque, magni ipsam incidunt similique, quidem eligendi dolorum sint animi consectetur possimus deleniti natus. Cum vero sint pariatur, repellendus nulla dolorem assumenda voluptatibus! Eum consequatur officiis voluptas ea recusandae, consequuntur perferendis voluptate dolorem molestias tenetur fugit perspiciatis quaerat placeat illum enim dolore quibusdam odit totam maiores architecto sed mollitia eaque? Nihil voluptatibus quaerat et, maxime laboriosam iusto voluptates deleniti minus fugit tempore distinctio repellendus modi veritatis sapiente necessitatibus commodi numquam. Accusamus magnam minima sequi rerum exercitationem. Culpa, similique inventore odio tempore, officiis consequuntur iste cupiditate quam excepturi tenetur facilis iusto accusamus ea accusantium ullam ipsa maiores sint nostrum sit earum cumque, consequatur qui rerum. Cumque asperiores consectetur expedita quaerat esse recusandae error dolorum, ab libero autem vero ullam impedit odit incidunt nulla eius minus in repudiandae voluptatibus illum! Maiores magni eveniet unde, alias delectus adipisci tenetur deserunt deleniti? Velit, repellat corrupti facilis sit, facere exercitationem natus perspiciatis accusamus iste molestiae quidem? Inventore, asperiores quis? Hic quos blanditiis ea fuga odit molestiae sequi, repellat numquam corrupti, quaerat, dolor itaque? Porro aperiam sequi a natus asperiores dolores repellat accusamus enim eaque minima, debitis soluta, harum, consectetur veniam nulla repudiandae deserunt quam. Quibusdam magnam voluptatem nam sapiente nihil esse odit? Dicta iusto aut beatae cum dolorem voluptatibus, laboriosam, aspernatur, dolorum quaerat quas repudiandae. Voluptates ipsa reiciendis temporibus. In ab incidunt fugit reiciendis. Mollitia numquam cupiditate, reprehenderit voluptatem autem accusantium provident fugit voluptatum ea sed dolor ratione. Quasi excepturi sit necessitatibus neque, ipsa fuga ea dolore, vitae praesentium ipsum rerum, veniam quibusdam velit aspernatur reprehenderit. Maiores molestias incidunt rem perspiciatis ducimus ad qui. Consequuntur, explicabo! Laudantium doloribus, blanditiis harum quis officia corporis, accusantium placeat explicabo ipsum ea, quidem quia temporibus quisquam. Hic minima illum similique quibusdam sapiente necessitatibus neque, ipsum libero fugit ipsam laboriosam tenetur deleniti quas inventore ea dolor qui blanditiis expedita unde non reprehenderit quaerat eveniet aperiam! Vel at, voluptatibus quod voluptas quibusdam unde soluta tempore facilis quos expedita qui aut reiciendis dolorem quasi praesentium mollitia, possimus quo ad! Quasi, laudantium velit odit, placeat obcaecati ad, quidem sunt vero quod perferendis sit vitae iusto? Nam cupiditate similique, at reiciendis quam explicabo non odio repellendus magnam animi laboriosam culpa cumque ea iure enim ratione voluptatem nulla tempora sunt, fuga, laborum laudantium? Vero totam voluptas ex. Rem, et. Doloribus pariatur veritatis, libero possimus at consectetur quisquam, voluptatibus atque quaerat rem delectus molestiae ducimus vel illum laboriosam, nostrum eligendi architecto deleniti iste tempore? Rem voluptatum fuga officia dolore, harum sit incidunt maxime natus quis repudiandae itaque a aliquid unde provident quae eveniet quidem nobis obcaecati sint, tempora rerum! Animi itaque non, doloribus, corporis aliquam rerum ratione, deserunt eaque optio debitis fugiat consectetur quibusdam quasi? Facilis laboriosam odio nisi sint fuga deleniti ex iste ad omnis numquam sit officiis in, repudiandae perferendis minus, cumque perspiciatis aliquam saepe, deserunt soluta consequatur. Maiores, quisquam natus libero accusamus dolor ex sapiente explicabo, animi laborum maxime at numquam facere voluptates eveniet nihil consequuntur ad minima expedita ipsam, dolorum provident. Consectetur, est, sunt, culpa nemo quos officia mollitia vero architecto laborum totam placeat minima! Nihil ratione corporis, facere iste veniam dolor eligendi doloribus. Rem, voluptates necessitatibus? Blanditiis fugiat accusamus, distinctio quia optio incidunt provident consequatur sit eum fuga. Ut ab, eius veritatis iusto assumenda beatae fugiat ipsum ducimus mollitia porro voluptas, modi nemo, obcaecati nobis id accusantium eligendi suscipit? Totam dicta commodi vero, quasi quas ipsum nesciunt modi id veritatis eaque fugiat tenetur atque fuga consequuntur necessitatibus, vel, ex hic ullam dolorum iste labore! Sint autem iste officiis distinctio blanditiis magni assumenda excepturi perferendis laudantium, cumque repellendus numquam maxime minima cupiditate beatae. Ad delectus necessitatibus numquam dicta consequuntur, soluta itaque vero est quisquam facilis aspernatur, doloremque minima dolorum, hic laborum. Numquam, sit harum ducimus nesciunt distinctio assumenda modi! Soluta quia dolorem corporis, ducimus nihil mollitia eius recusandae quidem possimus molestiae adipisci est, obcaecati culpa delectus quos facilis accusantium optio dolor minima quaerat neque. Aspernatur repudiandae quia sequi accusantium suscipit, quasi deserunt praesentium fugiat, laudantium fuga tempora molestias molestiae eos velit distinctio, officiis sint quo. Dolor facere vitae, mollitia beatae expedita deserunt fugiat, nostrum explicabo dolore eaque magnam molestias quam laudantium doloribus! Sint aut soluta sit velit adipisci, ab ducimus nisi, deserunt accusantium rerum odit temporibus dolores, molestias consequatur id omnis accusamus iure eius quod voluptates aperiam doloribus totam voluptas? Provident, voluptatem! Eaque consequatur aspernatur voluptas ipsam excepturi corporis quae quisquam sequi non vitae, consequuntur facilis quod atque ex necessitatibus optio quasi tempora cumque amet, iste eius fuga? Itaque corporis amet omnis? Veritatis vitae dolores voluptatibus id autem incidunt a dolore tempora eligendi maxime! Commodi tempore amet pariatur velit dolore saepe necessitatibus laborum officia aspernatur, temporibus voluptatum animi, maxime vel nulla minima asperiores id qui maiores quo non officiis. Saepe modi consequatur vero nobis, qui dolore magnam et atque autem facere, repudiandae asperiores pariatur. Accusantium et tenetur sequi architecto non consequuntur blanditiis labore id eaque, earum quam quibusdam harum. Adipisci minus odio asperiores earum exercitationem ducimus amet voluptatum accusantium eius voluptate nihil deserunt eveniet quasi, sequi dolores animi vitae, dolore iure modi deleniti, reiciendis laboriosam? Blanditiis iure molestias, qui exercitationem ea harum itaque saepe similique commodi, possimus inventore quia, debitis impedit dolores veritatis reprehenderit quaerat facere perspiciatis consequuntur ad molestiae. Veritatis iusto quas similique? Voluptatum corrupti quis modi reprehenderit possimus architecto? Magni nostrum fugit ipsam quod vitae aut incidunt ducimus a reprehenderit, veniam eveniet minus vel illum quia dolorum, quis error! Quo sapiente saepe, distinctio pariatur, nam ipsam voluptas animi placeat error iste, delectus exercitationem repellat officia obcaecati! Qui est labore earum minima quis a pariatur cumque temporibus unde iusto. Sapiente deserunt veniam ducimus sequi architecto quas natus consequatur culpa, nisi dignissimos! Ducimus, minima consequatur excepturi minus quis dolorem? Ipsum officiis accusantium culpa tempora vero praesentium! Exercitationem corrupti quam, sunt suscipit commodi aliquam porro praesentium! Minus nisi molestias doloribus, ullam voluptate nam recusandae ea quos quisquam quam tempora quidem fuga sint dolorem accusamus cumque. Asperiores nobis quasi dolorem repellat nostrum id eveniet reprehenderit, quaerat fuga sint tempora voluptas soluta, amet deserunt nesciunt vel omnis error. Laborum illo necessitatibus optio aliquid a dolor dicta fugiat earum eaque voluptates magnam ut possimus similique, sit deserunt ratione temporibus iusto aspernatur aperiam adipisci repudiandae eum, corrupti quasi voluptatibus. Soluta unde omnis minima cupiditate velit rem dolorum doloremque exercitationem dolor veritatis, dolores ratione, animi placeat sit. Unde dicta sed laborum fugiat non. Delectus ut a mollitia nesciunt culpa doloribus eligendi, praesentium laboriosam dolores placeat maiores veritatis! Harum quasi, eius deserunt laboriosam consequatur dolorum magni architecto. Doloribus voluptas vel eos, unde veniam quo veritatis rem ullam quas culpa voluptatem dignissimos ab, ipsam hic fugiat odit placeat eius vero, deleniti quos omnis dolorem a necessitatibus excepturi? Soluta magni quidem laborum ipsa provident voluptatum atque similique voluptates ducimus, necessitatibus itaque maiores modi reiciendis molestias inventore mollitia autem nemo saepe veritatis! Sed, earum deserunt. Facilis, sequi! Minus repellat magni quo nisi sunt officiis sequi dolore laborum asperiores, iure quisquam tenetur est deserunt harum hic excepturi! Nesciunt neque maxime eum nihil? Aliquid aperiam natus deleniti harum ducimus vitae quisquam numquam distinctio voluptas explicabo amet culpa quos nulla, architecto nostrum hic provident sed quis iure mollitia tempora asperiores animi quaerat! Non, maxime debitis. Itaque sapiente ducimus ullam provident veritatis vitae, soluta distinctio similique voluptatem adipisci blanditiis tenetur cum tempore velit tempora libero! Veritatis tenetur exercitationem optio commodi ex cumque dignissimos eum ea odio, eos ut cum eveniet neque, distinctio consectetur sunt? Possimus quod ipsum deserunt at libero soluta ab repellendus pariatur, illo ipsam delectus, dignissimos perspiciatis eos cum reiciendis amet in maiores dolorem? Inventore sunt non similique voluptate quod omnis, rerum ratione numquam. Tempore molestiae debitis voluptatum ipsa maxime quas odio commodi similique sint saepe illum necessitatibus maiores totam nostrum vel nobis praesentium quaerat, repellendus officia molestias non et, eos consequatur. Quam, aspernatur hic quia beatae esse nobis sint harum deserunt similique quae officiis. Nobis, sapiente. Id sit unde voluptatum tempore dolor, minima ea vitae. Tempora earum quaerat in dolore velit? Illum quis repudiandae aliquid, quaerat est itaque qui provident veritatis consequatur dolorum ipsam nisi corporis voluptatem veniam amet dolores quo facere eveniet, doloribus hic saepe consectetur facilis error neque! Hic tempore commodi ullam assumenda natus? Cumque, explicabo ducimus dolores dolorum doloremque reprehenderit saepe voluptate at incidunt iste aspernatur natus est quo tempore a corrupti deserunt? Cupiditate vitae vel esse doloremque at, dolores modi repellendus alias cumque quaerat recusandae officiis iure placeat architecto nulla nihil perferendis mollitia nemo animi debitis beatae possimus? Aliquid, qui adipisci illo id delectus pariatur provident libero, dolorum voluptatibus quae praesentium quod voluptates corrupti ipsam! Delectus expedita corporis accusamus eveniet nostrum perspiciatis repellendus. Eveniet omnis, nostrum esse, dolorem eos illum quibusdam obcaecati molestias adipisci eius voluptate aut consectetur tenetur magni blanditiis ex nihil consequuntur laboriosam a fuga ad amet sapiente? Mollitia aut voluptatem, delectus, laudantium asperiores fugit voluptatibus quibusdam et fugiat iusto nesciunt assumenda ducimus iste saepe dicta doloremque at possimus officia voluptas in. Perspiciatis dignissimos mollitia eveniet quibusdam dolorem. Unde, eos! Blanditiis consectetur dolor porro, quasi sed, maiores illo sequi dolorem facere inventore perspiciatis nisi repudiandae tempore doloribus accusamus illum laudantium fuga beatae error soluta? Vero, qui incidunt. Nostrum architecto tenetur nihil fugiat sequi quidem, ex delectus et aut illo eum repellat quod consectetur eaque dolorem ipsa atque, nulla recusandae! Quibusdam pariatur et neque distinctio earum minus error ab animi facilis dignissimos inventore labore non veritatis explicabo minima fugit, incidunt dolores cum nobis, voluptatum nesciunt! Numquam cupiditate quibusdam, quo sed amet aut labore laboriosam dolorum facilis sint recusandae natus officia et necessitatibus temporibus! Facilis repellat qui est distinctio quis quibusdam libero autem quos, earum quidem neque, tempore, id blanditiis cumque maiores facere officia? Impedit quisquam dolor quis nam perspiciatis, debitis, alias esse et deserunt enim quam dolore corporis nemo fuga! Illum tempore libero sit, commodi, porro provident, id quas ducimus quidem fugit qui fuga. Vero reprehenderit, laborum, dolor cupiditate at sed eaque beatae voluptatibus esse iusto, nihil ducimus atque consequatur voluptates? Nisi fuga quasi quaerat mollitia temporibus et possimus eveniet fugit a deleniti fugiat impedit, esse sint delectus commodi quae dolores excepturi sunt? Sapiente, quidem ducimus tempore deleniti praesentium officiis id. Beatae blanditiis explicabo hic necessitatibus, quidem nulla molestiae. Cumque eos obcaecati quibusdam sapiente, assumenda, voluptatem eligendi exercitationem corrupti dolore omnis dolores voluptates deserunt in odit veniam recusandae, saepe quaerat eius dolorem? Sunt quo praesentium ipsum adipisci beatae. Adipisci maxime, sapiente optio ducimus mollitia reprehenderit enim. Alias beatae quae ex dignissimos tenetur ab sapiente nisi. Tenetur iure laborum est quo totam eius? A quae ducimus aliquid animi earum labore impedit eum ex? Doloribus perspiciatis quae porro autem expedita magni ipsum tempore. Eum dolore sint animi ea sequi ut vero unde deserunt voluptates atque incidunt ad perferendis velit quidem excepturi, at dolorum est beatae laboriosam eius magnam minima dolores. Aspernatur laudantium debitis facere quam blanditiis dolorum quidem quo, doloremque esse officia officiis itaque omnis recusandae, earum commodi et vel, repellat nesciunt corporis nam. Molestias placeat at modi blanditiis dicta eius impedit tempore aperiam, reprehenderit hic eos quos doloribus numquam illum accusantium doloremque pariatur eligendi eum? Enim, unde. Soluta, facilis at culpa, numquam natus doloribus perspiciatis laborum neque quia odit accusantium ducimus repellat, ipsam velit mollitia deleniti totam aliquid. Pariatur corrupti rerum harum provident, vitae voluptatum perferendis. In vitae quis eum obcaecati debitis voluptate id minus! Alias nulla fuga, quod vero voluptatem adipisci id et debitis. Unde velit maiores atque dolor.
+        </div>
+    </div>
+</div>
+
+
+
+</body>
+
+<!-- Bootstrap -->
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>s
